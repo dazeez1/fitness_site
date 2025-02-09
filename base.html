@@ -1,0 +1,170 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Dashboard
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex">
+   <!-- Sidebar -->
+   <div class="w-64 bg-[#ff9c6a] h-screen p-4">
+    <div class="flex items-center mb-8">
+     <img alt="Fitflex logo" class="h-12 w-12 mr-2" height="50" src="images/logo.png" width="50"/>
+     <span class="text-black text-2xl font-bold">
+      Fitflex
+     </span>
+    </div>
+    <nav>
+     <ul>
+      <li class="mb-4">
+       <a class="text-black flex items-center" href="#">
+        <i class="fas fa-tachometer-alt mr-2">
+        </i>
+        Dashboard
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="text-black flex items-center" href="#">
+        <i class="fas fa-users mr-2">
+        </i>
+        Users
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="text-black flex items-center" href="#">
+        <i class="fas fa-cogs mr-2">
+        </i>
+        Settings
+       </a>
+      </li>
+      <li>
+       <a class="text-black flex items-center" href="#">
+        <i class="fas fa-sign-out-alt mr-2">
+        </i>
+        Logout
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-6">
+    <div class="flex justify-between items-center mb-6">
+     <h1 class="text-2xl font-bold text-black">
+      Dashboard
+     </h1>
+     <div class="flex items-center">
+      <span class="mr-2 text-black">
+       Hello, User
+      </span>
+      <img alt="User profile picture" class="h-10 w-10 rounded-full" height="40" src="images/logo.png" width="40"/>
+     </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+     <div class="bg-white p-4 rounded-lg shadow">
+      <h2 class="text-gray-600">
+       Total Members
+      </h2>
+      <p class="text-3xl font-bold">
+       1,234
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow">
+      <h2 class="text-gray-600">
+       Active Classes
+      </h2>
+      <p class="text-3xl font-bold">
+       56
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow">
+      <h2 class="text-gray-600">
+       Monthly Revenue
+      </h2>
+      <p class="text-3xl font-bold">
+       $12,345
+      </p>
+     </div>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+     <h2 class="text-xl font-bold mb-4">
+      Recent Activities
+     </h2>
+     <table class="w-full text-left">
+      <thead>
+       <tr>
+        <th class="pb-2">
+         Activity
+        </th>
+        <th class="pb-2">
+         User
+        </th>
+        <th class="pb-2">
+         Date
+        </th>
+        <th class="pb-2">
+         Status
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr class="border-t">
+        <td class="py-2">
+         Joined Beginner Class
+        </td>
+        <td class="py-2">
+         John Doe
+        </td>
+        <td class="py-2">
+         2023-01-01
+        </td>
+        <td class="py-2">
+         <span class="bg-green-200 text-green-800 text-sm font-semibold px-2 py-1 rounded">
+          Completed
+         </span>
+        </td>
+       </tr>
+       <tr class="border-t">
+        <td class="py-2">
+         Joined Intermediate Class
+        </td>
+        <td class="py-2">
+         Jane Smith
+        </td>
+        <td class="py-2">
+         2023-01-02
+        </td>
+        <td class="py-2">
+         <span class="bg-[#ff9c6a] text-orange-800 text-sm font-semibold px-2 py-1 rounded">
+          Pending
+         </span>
+        </td>
+       </tr>
+       <tr class="border-t">
+        <td class="py-2">
+         Joined Advanced Class
+        </td>
+        <td class="py-2">
+         Bob Johnson
+        </td>
+        <td class="py-2">
+         2023-01-03
+        </td>
+        <td class="py-2">
+         <span class="bg-red-200 text-red-800 text-sm font-semibold px-2 py-1 rounded">
+          Cancelled
+         </span>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
