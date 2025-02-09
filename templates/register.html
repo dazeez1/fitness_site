@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>fitflex - fitness center</title>
 
-    <!-- {% load static %} Load the static template tag -->
-
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -131,19 +129,19 @@
 
     <!-- header start -->
     <header class="header">
-        <a href="" id="logo"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
+        <a href="" id="logo"><img src="images/logo.png"><p>fit<span>flex</span></p></a>
 
         <nav class="navbar">
 
-            <a href="{% url 'index' %}" id="logo2"><img src="{% static 'images/logo.png' %}"><p>fit<span>flex</span></p></a>
+            <a href="{% url 'index' %}" id="logo2"><img src="images/logo.png"><p>fit<span>flex</span></p></a>
 
             <a href="{% url 'index' %}">home</a>
             <a href="{% url 'index' %}#about">about</a>
             <a href="{% url 'index' %}#services">services</a>
             <a href="{% url 'index' %}#contact">contact</a>
             <a href="" id="rec">|</a>
-            <a href="{% url 'login' %}" id="rec">Login</a>
-            <a href="{% url 'register' %}" id="rec" class="btn">Sign Up</a>
+            <a href="login.html" id="rec">Login</a>
+            <a href="register.html" id="rec" class="btn">Sign Up</a>
         </nav>
 
         <div class="icons">
@@ -214,7 +212,7 @@
                 
             </div>
             <div class="pic">
-                <img src="{% static 'images/12.jpg' %}">
+                <img src="images/12.jpg">
             </div>
         </div>
     </section>
