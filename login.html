@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>fitflex - fitness center</title>
+
+    <!-- Font Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Google Fonts link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .abinibi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+      }
+
+      .container {
+        width: 100%;
+        display: flex;
+        max-width: 850px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .login {
+        width: 400px;
+      }
+
+      form {
+        width: 250px;
+        margin: 60px auto;
+      }
+
+      h1 {
+        margin: 20px;
+        text-align: center;
+        font-weight: bolder;
+        text-transform: uppercase;
+      }
+
+      p {
+        text-align: center;
+        margin: 10px;
+      }
+
+      hr {
+        border-top: 2px solid tomato;
+      }
+
+      .pic img {
+        width: 450px;
+        height: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+
+      form label {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px;
+      }
+
+      input {
+        width: 100%;
+        margin: 2px;
+        border: none;
+        outline: none;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        text-transform: none;
+      }
+
+      button {
+        border: none;
+        outline: none;
+        padding: 8px;
+        width: 252px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 5px;
+        background: tomato;
+      }
+
+      button:hover {
+        background: rgba(214, 86, 64, 1);
+      }
+
+      p {
+        margin: 20px;
+        color: black;
+      }
+
+      a {
+        color: tomato;
+        text-decoration: none;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .login {
+          width: 100%;
+          margin: 0;
+        }
+
+        .pic img {
+          width: 100%;
+          border-radius: 0;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <a href="#" id="logo"
+        ><img src="images/logo.png" alt="Fitflex Logo" />
+        <p>fit<span>flex</span></p></a
+      >
+
+      <nav class="navbar">
+        <a href="#" id="logo2"
+          ><img src="images/logo.png" alt="Fitflex Logo" />
+          <p>fit<span>flex</span></p></a
+        >
+        <a href="#">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#contact">contact</a>
+        <a href="#" id="rec">|</a>
+        <a href="login.html" id="rec">Login</a>
+        <a href="register.html" id="rec" class="btn">Sign Up</a>
+      </nav>
+
+      <div class="icons">
+        <div id="search-form" class="fas fa-search"></div>
+        <div id="menu-bars" class="fas fa-bars"></div>
+      </div>
+
+      <div class="form-search">
+        <input type="search" placeholder="search here" />
+      </div>
+    </header>
+    <!-- header end -->
+
+    <section class="abinibi">
+      <div class="container">
+        <div class="login">
+          <form action="login.html" method="POST">
+            <h1>Login</h1>
+            <hr />
+            <p>Explore the World!</p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+            <div class="error"></div>
+            <button type="submit">Submit</button>
+            <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+          </form>
+        </div>
+        <div class="pic">
+          <img src="images/about-img.png" alt="About Fitflex" />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section starts -->
+    <footer class="footer">
+      <i class="fas fa-regular fa-copyright"></i> Copyright
+      <span
+        ><a
+          href="https://www.linkedin.com/in/abdulhameed-ajani/"
+          target="_blank"
+          >Abdulhameed Ajani</a
+        ></span
+      >
+      | all rights reserved!
+    </footer>
+    <!-- footer section ends -->
+  </body>
+</html>
